@@ -13,9 +13,18 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-24 pb-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-cream mb-4">
-              Partho Mukherjee
-            </h1>
+            <div className="flex items-center gap-4 mb-4">
+              <h1 className="text-5xl md:text-7xl font-bold text-cream">
+                Partho Mukherjee
+              </h1>
+              <div className="w-24 h-24 rounded-full overflow-hidden">
+                <img 
+                  src="/lovable-uploads/ded6935e-41d1-4a9a-b8bf-4875fc6e4c9c.png" 
+                  alt="Partho Mukherjee" 
+                  className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            </div>
             <div className="flex flex-wrap gap-2 my-4">
               <span className="highlight-box">Professional Copywriter</span>
               <span className="highlight-box">Web Designer</span>
