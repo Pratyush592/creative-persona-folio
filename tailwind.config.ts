@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				sage: '#8A9A5B',
+                neon: '#ACFF33',
+                charcoal: '#2C2C2C',
+                cream: '#F5F5DC',
+                purple: {
+                    light: '#E5DEFF',
+                    DEFAULT: '#9b87f5',
+                    dark: '#7E69AB',
+                },
+                olive: '#3A4D39',
+                sand: '#E1D9C9',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +86,27 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                'slide-up': {
+                    '0%': { transform: 'translateY(20px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.8s ease-out forwards',
+                'slide-up': 'slide-up 0.8s ease-out forwards',
+			},
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'neon-glow': 'linear-gradient(90deg, #ACFF33 0%, #8A9A5B 100%)',
+                'purple-pink': 'linear-gradient(90deg, #9b87f5 0%, #E5DEFF 100%)',
+            },
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
