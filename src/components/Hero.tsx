@@ -30,10 +30,7 @@ const Hero = () => {
               Words have power. Designs create impact. And being results-focused, I combine all these to craft high-converting marketing assets that turn visitors into buyers and brands into market leaders.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#portfolio" className="btn-primary">
-                View Portfolio
-              </a>
-              <a href="#contact" className="btn-outline">
+              <a href="#contact" className="btn-primary">
                 Get In Touch
               </a>
             </div>
@@ -46,11 +43,6 @@ const Hero = () => {
                 alt="Portfolio Preview"
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-6">
-                <p className="text-neon font-bold">COPY THAT CONVERTS</p>
-                <p className="text-cream text-xl">SEE FOR YOURSELF</p>
-              </div>
             </div>
           </div>
         </div>

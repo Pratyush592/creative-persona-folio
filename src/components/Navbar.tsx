@@ -35,16 +35,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold text-neon">
-            PARTHO<span className="text-cream">.DESIGN</span>
+            PORTFOLIO
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-cream hover:text-neon transition-colors">
               Services
-            </a>
-            <a href="#portfolio" className="text-cream hover:text-neon transition-colors">
-              Portfolio
             </a>
             <a href="#about" className="text-cream hover:text-neon transition-colors">
               About
@@ -71,13 +68,6 @@ const Navbar = () => {
               onClick={toggleMobileMenu}
             >
               Services
-            </a>
-            <a
-              href="#portfolio"
-              className="text-cream hover:text-neon transition-colors"
-              onClick={toggleMobileMenu}
-            >
-              Portfolio
             </a>
             <a
               href="#about"

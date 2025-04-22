@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
-import Portfolio from '../components/Portfolio';
 import BrandDesign from '../components/BrandDesign';
 import WebDesign from '../components/WebDesign';
 import ThreeD from '../components/ThreeD';
@@ -38,7 +37,6 @@ const Index = () => {
       <Hero />
       <Services />
       <About />
-      <Portfolio />
       <BrandDesign />
       <WebDesign />
       <ThreeD />
