@@ -40,8 +40,8 @@ const WebDesign = () => {
                   </div>
                   <div className="rounded-md overflow-hidden">
                     <img 
-                      src="/lovable-uploads/c8d2586c-192b-4d6f-9861-9ddc5f4098c8.png" 
-                      alt="Web design example" 
+                      src="/lovable-uploads/7d64e96b-1571-4856-a1e6-79e73e02c45d.png" 
+                      alt="Web design example showing a digital banking interface" 
                       className="w-full h-auto"
                     />
                   </div>
