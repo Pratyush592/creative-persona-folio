@@ -11,38 +11,28 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 pt-24 pb-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
+        <div className="flex flex-col items-center lg:items-start">
+          <div className="animate-fade-in text-center lg:text-left max-w-2xl">
             <h1 className="text-5xl md:text-7xl font-bold text-cream mb-4">
               Partho Mukherjee
             </h1>
-            <div className="flex flex-wrap gap-2 my-4">
+            <div className="flex flex-wrap gap-2 my-4 justify-center lg:justify-start">
               <span className="highlight-box">Professional Copywriter</span>
               <span className="highlight-box">Web Designer</span>
               <span className="highlight-box">Email Marketer</span>
               <span className="highlight-box">Web Developer</span>
               <span className="highlight-box">Facebook Ads Specialist</span>
             </div>
-            <p className="text-lg text-cream/90 mb-8 max-w-lg">
+            <p className="text-lg text-cream/90 mb-8">
               Versatility is My Strength. Mastery is My Standard.
             </p>
-            <p className="text-cream/80 mb-8 max-w-lg">
+            <p className="text-cream/80 mb-8">
               Words have power. Designs create impact. And being results-focused, I combine all these to craft high-converting marketing assets that turn visitors into buyers and brands into market leaders.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center lg:justify-start">
               <a href="#contact" className="btn-primary">
                 Get In Touch
               </a>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <div className="relative w-full h-[500px] rounded-2xl overflow-hidden animate-fade-in shadow-xl border border-cream/10">
-              <img 
-                src="/lovable-uploads/be153ccc-b004-4a2c-b71e-32e373fe4992.png" 
-                alt="Portfolio Preview"
-                className="w-full h-full object-cover object-center"
-              />
             </div>
           </div>
         </div>
