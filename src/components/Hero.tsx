@@ -37,13 +37,17 @@ const Hero = () => {
           <div className="animate-fade-in text-center lg:text-left max-w-2xl">
             <h1 
               id="name-heading"
-              className={`text-5xl md:text-7xl font-bold mb-4 transition-colors duration-300 ${
-                isHighlighted ? 'text-purple' : 'text-cream'
-              }`}
+              className="text-5xl md:text-7xl font-bold mb-4 text-cream"
               style={{
                 WebkitUserSelect: 'text',
                 userSelect: 'text',
                 cursor: 'text',
+                background: isHighlighted ? 'linear-gradient(90deg, #9b87f5 0%, #E5DEFF 100%)' : 'transparent',
+                WebkitBackgroundClip: isHighlighted ? 'initial' : 'text',
+                backgroundClip: isHighlighted ? 'initial' : 'text', 
+                color: isHighlighted ? 'black' : 'inherit',
+                borderRadius: '4px',
+                padding: '0 4px',
               }}
             >
               Partho Mukherjee
