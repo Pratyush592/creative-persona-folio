@@ -40,6 +40,11 @@ const Hero = () => {
               className={`text-5xl md:text-7xl font-bold mb-4 transition-colors duration-300 ${
                 isHighlighted ? 'text-purple' : 'text-cream'
               }`}
+              style={{
+                WebkitUserSelect: 'text',
+                userSelect: 'text',
+                cursor: 'text',
+              }}
             >
               Partho Mukherjee
             </h1>
