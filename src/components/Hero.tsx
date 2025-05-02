@@ -1,7 +1,29 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+  
+  useEffect(() => {
+    const handleSelection = () => {
+      const selection = window.getSelection();
+      const nameHeading = document.getElementById('name-heading');
+      
+      if (selection && nameHeading) {
+        // Check if any part of the name heading is selected
+        const range = selection.toString();
+        if (range && nameHeading.textContent?.includes(range)) {
+          setIsHighlighted(true);
+        } else {
+          setIsHighlighted(false);
+        }
+      }
+    };
+    
+    document.addEventListener('selectionchange', handleSelection);
+    return () => document.removeEventListener('selectionchange', handleSelection);
+  }, []);
+
   return (
     <section className="min-h-screen bg-charcoal relative overflow-hidden flex items-center">
       {/* Background Elements */}
@@ -13,7 +35,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-24 pb-12 relative z-10">
         <div className="flex flex-col items-center lg:items-start">
           <div className="animate-fade-in text-center lg:text-left max-w-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-cream mb-4">
+            <h1 
+              id="name-heading"
+              className={`text-5xl md:text-7xl font-bold mb-4 transition-colors duration-300 ${
+                isHighlighted ? 'text-purple' : 'text-cream'
+              }`}
+            >
               Partho Mukherjee
             </h1>
             <div className="flex flex-wrap gap-2 my-4 justify-center lg:justify-start">
